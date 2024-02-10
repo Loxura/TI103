@@ -24,7 +24,7 @@ def shunting_yard(expression):
         elif token == ')':
             while operator_stack and operator_stack[-1] != '(':
                 output_stack.append(operator_stack.pop())
-            operator_stack.pop()  # Remove the '(' from the stack
+            operator_stack.pop()  
 
     while operator_stack:
         output_stack.append(operator_stack.pop())
