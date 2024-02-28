@@ -20,9 +20,9 @@ def shunting_yard(expression):
 ''' 
 
     as long as operator_stack is not empty and the last item in the operator_stack is an operator 
-    and if the precedence of the last operator in the stack is higher then the currently pointed operator
+    and if the precedence of the last operator in the stack is higher than the currently pointed operator
 
-    move the operator to the outpu_stack
+    move the operator to the output_stack
     
 '''
             while operator_stack and operator_stack[-1] in operators and operators[operator_stack[-1]] >= operators[token]:
